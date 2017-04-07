@@ -1,0 +1,19 @@
+{
+    "name": "zx-coder/yii2-console",
+    "description": "Yii 2 Console",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0.5",
+        "zx-coder/vk-api": "^1.0"
+    },
+    "extra": {
+        "yii\\composer\\Installer::postCreateProject": {
+            "setPermission": [
+                {
+                    "runtime": "0777",
+                    "yii": "0755"
+                }
+            ]
+        }
+    }
+}
